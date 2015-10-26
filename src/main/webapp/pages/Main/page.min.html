@@ -30,11 +30,15 @@ var _MainPage_Variables_ ={};
 <script id="Main.html" type="text/ng-template">
 <wm-page data-ng-controller="MainPageController" name="page1">
     <wm-content name="content1">
-        <wm-page-content columnwidth="12" name="page_content1">
+        <wm-page-content name="page_content1" columnwidth="12">
             <wm-tabs name="tabs1">
                 <wm-tabpane name="tabpane1">
                     <wm-tabheader name="tabheader1"></wm-tabheader>
-                    <wm-tabcontent name="tabcontent1"></wm-tabcontent>
+                    <wm-tabcontent name="tabcontent1">
+                        <wm-panel class="panel-default" name="panel1">
+                            <wm-panel-footer name="panel_footer1"></wm-panel-footer>
+                        </wm-panel>
+                    </wm-tabcontent>
                 </wm-tabpane>
                 <wm-tabpane name="tabpane2">
                     <wm-tabheader name="tabheader2"></wm-tabheader>
@@ -55,5 +59,10 @@ var _MainPage_Variables_ ={};
             </wm-tabs>
         </wm-page-content>
     </wm-content>
+    <wm-page data-ng-controller="MainPageController" name="mainpage">
+        <wm-content name="content1">
+            <wm-page-content name="page_content1" columnwidth="12"></wm-page-content>
+        </wm-content>
+    </wm-page>
 </wm-page>
 </script>
